@@ -1,0 +1,12 @@
+$fonts-family: ('Source': 'Source Sans Pro',  'Hind': 'Hind', 'Fresca': 'Fresca' );
+$headerPicture: url(../img/m-h-day.jpg);
+$headertextColor: #2C2F3C;
+$buttonColor: #699900;
+$highligtWordsColor: #14A0C7;
+$backgroundSectionFooterColor: #21232E;
+$sectionFooterTextColor: #AFB3C0;
+$banerGradientColor: linear-gradient(to right, #689806, #2D5BD5);
+$bodyBackgroundColor: #ccc;
+$mainFontStyle: map-get($fonts-family, 'Hind'), sans-serif;
+$headerHeadingMargin: 5px 0;
+$headerHighligtPosition: 150px;

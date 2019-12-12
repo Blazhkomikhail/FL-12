@@ -1,0 +1,12 @@
+$fonts-family: ('Source': 'Source Sans Pro',  'Hind': 'Hind', 'Fresca': 'Fresca' );
+$headerPicture: url(../img/m-h-night.jpg);
+$headertextColor: #fff;
+$buttonColor: #E3AC00;
+$highligtWordsColor: #FC4D32;
+$backgroundSectionFooterColor: #3B3F50;
+$sectionFooterTextColor: #C3C7CC;
+$banerGradientColor: linear-gradient(to right, #DDA206, #97334D);
+$bodyBackgroundColor: #21232E;
+$mainFontStyle: map-get($fonts-family, 'Fresca'), sans-serif;
+$headerHeadingMargin: 25px 0;
+$headerHighligtPosition: 170px;
