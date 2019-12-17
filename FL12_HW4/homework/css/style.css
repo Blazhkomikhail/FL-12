@@ -11,6 +11,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  z-index: 3;
+  background-color: #fff;
+  top: 0px;
 }
 .header .head-wrap {
   width: 100%;
@@ -58,6 +62,9 @@ body {
   width: 100%;
   position: absolute;
   z-index: 0;
+}
+.hero {
+  margin-top: 60px;
 }
 .hero-picture-wrap .hero-heading {
   font-size: 3.5em;
