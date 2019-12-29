@@ -1,8 +1,12 @@
-const MIN = 0;
-let MAX = 8;
+let numberRange = {
+	'min' : 0,
+	'max' : 8
+}
+
 let isWantToPlay = confirm('Do you want to play a game?');
 
 if ( isWantToPlay ) {
+	let tempMaxNum = numberRange.max;
 	let attemptsCount = 3;
 	let totalPrize = '0' + '$';
 	let startPossiblePrize = '100' + '$';
@@ -11,9 +15,8 @@ if ( isWantToPlay ) {
 
 	while ( attemptsCount > 0 ) {
 		
-		let randomNum = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
-		console.log( randomNum ); // don't forget to delete
-		let askUserNum = prompt(`Choose a roulette pocket number from ${MIN} to ${MAX}
+		let randomNum = Math.floor(Math.random() * (tempMaxNum - numberRange.min + 1)) + numberRange.min;
+		let askUserNum = prompt(`Choose a roulette pocket number from ${numberRange.min} to ${tempMaxNum}
 Attempts left: ${attemptsCount}
 Total prize: ${totalPrize}
 Possible prize on current attempt: ${currentPrize}`, '');
@@ -30,7 +33,7 @@ Do you want to continue?`);
 				attemptsCount = 3;
 				maxGamePrize = parseInt( maxGamePrize ) * 2 + '$';
 				currentPrize = maxGamePrize;
-				MAX += 4; 
+				tempMaxNum += 4; 
 			} else {
 				let isWinnerSure = confirm(`Thank you for your participation.
 Your prize is: ${totalPrize}.
@@ -40,7 +43,7 @@ Maybe still you want to play a game?`);
 					attemptsCount = 3;
 					maxGamePrize = parseInt( maxGamePrize ) * 2 + '$';
 					currentPrize = maxGamePrize;
-					MAX += 4; 
+					tempMaxNum += 4; 
 				} else {
 					attemptsCount = 0;
 					alert('See you...');
@@ -55,6 +58,8 @@ Maybe still you want to play a game?`);
 			if ( isWantToPlay ) {
 				attemptsCount = 3;
 				currentPrize = startPossiblePrize;
+				totalPrize = '0' + '$';
+				tempMaxNum = numberRange.max;
 			} else {
 				attemptsCount = 0;
 			}
