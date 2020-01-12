@@ -2,7 +2,7 @@ function convert() {
 	let resultArray = [];
 	for (let i = 0; i < arguments.length; i++) {
 		if (typeof arguments[i] === 'number') {
-			resultArray.push(arguments[i] + '');
+			resultArray.push( String(arguments[i]) );
 		} else {
 			resultArray.push( Number(arguments[i]) );
 		} 
@@ -16,13 +16,10 @@ function executeforEach(arr, func) {
 		func(key);
 	}
 }
-executeforEach([1,2,3], (el) => { 
-	console.log(el * 2); 
-});
 
 function mapArray(arr, func) {
 	let transformedArr = [];
-	executeforEach(arr, function(key) {
+	executeforEach(arr, (key) => {
 		transformedArr.push( func(Number(key)) );
 	})
 	return transformedArr;
