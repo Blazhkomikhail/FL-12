@@ -1,0 +1,41 @@
+.mainTitle {
+	margin-left: 50px;
+}
+.main {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px;
+}
+.logo {
+	cursor: pointer;
+}
+.setItem {
+	min-width: 250px;
+	min-height: 250px;
+	border: 1px solid black;
+	margin-top: 20px;
+	padding: 15px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.setButtonsWrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.removeBtn,
+.editBtn {
+	width: 75px;
+	height: 25px;
+	cursor: pointer;
+}
+.setContent {
+	flex-grow: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}

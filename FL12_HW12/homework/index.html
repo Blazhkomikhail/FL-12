@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 12 - Simple TODO List</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+	<template id='main_page'>
+		<span class="logo">Almost quizlet</span>
+		<h1 class="mainTitle">Welcome to the main page!</h1>
+		<main class="main">
+			<div class="setsWrap">
+				<!-- Append Sets here -->
+			</div>
+			<div class="addNewButtonWrap">
+				<button class="mainButton">Add new</button>
+			</div>
+		</main>
+	</template>
+	<template id='add_new_set'>
+		<span class="logo">Almost quizlet</span>
+		<h1>Add new set page</h1>
+	</template>
+	<template id='modify_set'>{{Modify set page}}</template>
+
+	<div id="root"></div>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>
