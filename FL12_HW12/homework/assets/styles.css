@@ -9,6 +9,9 @@
 .logo {
 	cursor: pointer;
 }
+.mainButton {
+	cursor: pointer;
+}
 .setItem {
 	min-width: 250px;
 	min-height: 250px;
@@ -32,10 +35,61 @@
 	height: 25px;
 	cursor: pointer;
 }
+.newSetsWrap {
+	width: 80%;
+	margin-top: 20px;
+}
+.addNewTitle {
+	text-align: center;
+}
+.newInputNameWrap {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 35px;
+}
 .setContent {
 	flex-grow: 2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	margin-bottom: 20px;
+}
+.termDefItem {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.termWrap {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.defWrap {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.termArea,
+.defArea {
+	resize: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 250px;
+    height: 20px;
+    font-size: 1.3em;
+
+}
+.nameTextarea {
+	width: 380px;
+	height: 25px;
+	resize: none;
+  	outline: none;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 1.4em;
+}
+.removeSpan {
+	margin-bottom: 20px;
+	cursor: pointer;
 }
